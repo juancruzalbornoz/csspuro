@@ -1,10 +1,10 @@
 import './Card.css';
 
-function Card(){
+function Card( props ){
     return(
         <div className='card'>
-            <h4>Producto</h4>
-            <p>Descipcion</p>
+            <h4>{props.product}</h4>
+            <p>{props.price}</p>
         </div>
     )
 
